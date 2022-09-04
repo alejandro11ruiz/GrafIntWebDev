@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@font-face { 
+    font-family: GOTfont;             /*Se consiguio el estilo GOT para los titulos*/
+    src: url('fuentes/GOT.ttf');  /* se referencio de forma normal*/
+}
+
+@font-face { 
+    font-family: AncizarSans;             /*Fuente AncizarSans estandar*/
+    src: url('fonts/Ancizar-Sans-Regular');  
+}
+
+
+body {      /* Para el cuerpo del sitio se define color de fondo, imagen de base, la imagen se repetirá para rellenar y tratará de
+    ocupar toda la pantalla de fondo*/                   
+	background-color:#F0E68C;                    
+	background-image: url(imagenes/found.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+
+a:hover {    /* Para los botones: se le aplica un tono blanco amarillento a la letra para cuando el cursor este sobre el boton*/ 
+	color: lightyellow;
+    text-shadow: 2px 2px black;
+}
+
+
+
+
+
+.divelem{
+    border: 15px solid lightyellow;
+}
+
+.menunav {    /* se ajustan ancho y calibración de posición para el espacio de botones de navegación */ 
+	width: 860px;  /* estilo para el menu de navegación */ 
+	margin: auto;
+	align: center;
+}
+.botonMenu {      /* Botones con tema GOT y varios ajustes de posición para la letra */ 
+	font-family: GOTfont;  
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	width: 160px;
+    height: 30px;
+    text-decoration: none;
+    padding:5px 10x 6px 8px;
+	float: left;
+    color: rgb(210, 210, 210); /*tono para las letras y diseño de bordes curvos y ubicación de ciertos márgenes*/
+    text-shadow: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+.botonMenu:hover {/*En caso de colocar el cursor sobre el boton se cambia de fondo*/
+	color: rgb(255, 238, 0);
+    text-shadow: none;
+	cursor:pointer;
+}  
+
+/* estilo para los titulares */ 
+h1{     
+	font-family: GOTfont;  /* Estilo de letra para Títulos de mayor tamaño*/
+	color:rgb(1, 1, 1);
+	font-size: 45px; /*ajustes en la fuente y ciertas características decorativas como sombras y alineación*/
+	font-weight: bold;
+	text-shadow: 4px 4px rgb(125, 125, 125);
+	text-align: center;
+    text-decoration: none;
+    
+	max-width: 800px; /*limites para el párrafo y letras*/
+    margin: auto;
+	margin-top: 30px;        
+	margin-bottom:60px;
+    background-image: radial-gradient(rgb(159, 159, 159),rgb(255, 255, 255)); 
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-width: thick;
+    border-radius: 15px 15px 15px 15px;
+} 
+h1:link {
+	color:#0b0b0b;
+	cursor: pointer;
+    font-size: 30px;
+	text-decoration: none;  /* No se hicieron cambios en esta zona*/ 
+}
+
+.aelem1{/*Característias visuales para el titulo de la pagina*/
+    color: rgb(58, 58, 58);
+    font-size: 45px;
+    text-shadow: 4px 4px rgb(161, 160, 160);
+    text-decoration: none;
+    margin: auto;    
+}
+
+
+
+
+h2 {
+	font-family: AncizarSans;  /*Diseño general para párrafos con una letra por defecto y ciertos elementos de decoración*/
+	color:#e2e2e2;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+	text-align: left;
+	max-width: 720px;
+	margin:auto;
+	padding:10px 10px 2px 10px;  /* arriba, derecha, abajo, izquierda */
+}
+    .contenido { /*Estructura personalizada para los párrafos, es esta la unica que es visible de los estilos hechos si no hay errores*/
+	position: relative;
+	left: 10px;
+    width: 720px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: rgb(235, 235, 235);
+    padding-left: 20px;
+    padding-right: 20px;    /*Es en este espacio en donde se ajustan los colocres, formas y bordes que van a recubrir el párrafo*/
+    border-radius: 10px;
+    border-width: thick;
+    border-style: groove;   /*Decoración al estilo del fondo de donuts y permite una mejor visualización de las letras*/
+    border-color: rgb(35, 35, 35);
+}
+
+    .contenido2{
+    position: relative;
+	left: 10px;
+    width: 720px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: palegoldenrod;
+    /*background-image: radial-gradient(lawngreen,greenyellow);*/
+    border-radius: 10px;
+    border-width: medium;
+    border-style: groove;
+    border-color:palevioletred}
+
+.Letras{  /*Formato de letras para párrafos, color azul y con fuente comun*/
+    font-family: AncizarSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+    color: rgb(73, 73, 73);
+}
+.Letras2{ /*Formato de letras para titulos locales, tamaño de letra mayor y tema*/
+    font-family: GOTfont;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: mediumvioletred}
+
+.Letras3{ /*Formato deletras para subtitulos locales, letra un poco mayor a la de parrafos y tema*/
+    font-family: GOTfont;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: mediumvioletred}
+
+
+    .foto { /*caracteristicas para fotos externas a parrafos, proposito general*/
+	position: relative;	
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.foto2 { /*caracteristicas para fotos externas a parrafos, al final no se uso*/
+	position: relative;	
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.uno {  /*Formato para imagenes dentro de parrafos, realiza ajustes para que el parrafo quede inmediato a la imagen*/
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: GOTfont;  /* solo si se suministra el archivo de la fuente */
+	font-size: 16px;
+	font-weight: normal;
+	text-align: justify;
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+
+/*Elementos de esta linea para abajo NO se utilizaron-----------------------------------------------------------------------*/
+.dos {
+	position: relative;
+	max-width:640px;
+	top: 20px;
+	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin: auto;
+}
+.tres {
+	position: relative;
+	float: left;
+	top: 5px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+th {    /* estilo para los encabezados de la tabla */ 
+	background-color: #663399;
+	color: #FFFF00;
+	font-weight: normal;
+	text-align: center;
+	padding: 10px 6px 4px 10px;  /* arriba, derecha, abajo, izquierda */
+	border-style:outset; /* borde bicelado */
+	border-size: 1px;
+	border-color: #663399;
+}
+td {       /* estilo para las celdas de la tabla */ 
+	background-color: #3333FF;
+	color: #DDDDFF;
+	padding: 10px 18px 10px 10px;  
+}
+td:hover {
+	color:#CC99CC;
+	text-shadow: 1px 1px #000000;	
+}  
+ul {        /* estilo para las listas */ 
+	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
+	margin: -2px 0px -60px -40px;  /* arriba, derecha, abajo, izquierda */
+}
