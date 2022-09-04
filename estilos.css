@@ -11,12 +11,12 @@
 }
 
 
-body {      /* Para el cuerpo del sitio se define color de fondo, imagen de base, la imagen se repetirá para rellenar y tratará de
-    ocupar toda la pantalla de fondo*/                   
+body {      /* Para el cuerpo del sitio se define color de fondo, imagen de base*/                   
 	background-color:#F0E68C;                    
 	background-image: url(imagenes/found.jpg);
 	background-repeat:no-repeat;
     background-size:cover;
+    background-attachment: fixed;
 }
 
 
@@ -124,6 +124,8 @@ h2 {
     border-width: thick;
     border-style: groove;   /*Decoración al estilo del fondo de donuts y permite una mejor visualización de las letras*/
     border-color: rgb(35, 35, 35);
+    height: auto;
+    word-wrap: break-word;
 }
 
     .contenido2{
@@ -153,7 +155,7 @@ h2 {
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    color: mediumvioletred}
+    color: rgb(73, 73, 73)}
 
 .Letras3{ /*Formato deletras para subtitulos locales, letra un poco mayor a la de parrafos y tema*/
     font-family: GOTfont;
@@ -161,14 +163,15 @@ h2 {
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    color: mediumvioletred}
+    color: rgb(73, 73, 73)}
 
 
     .foto { /*caracteristicas para fotos externas a parrafos, proposito general*/
 	position: relative;	
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     margin-bottom: 10px;
+    display:block;
 }
 
 .foto2 { /*caracteristicas para fotos externas a parrafos, al final no se uso*/
@@ -189,6 +192,8 @@ h2 {
 	text-align: justify;
 	color:#FFFFFF;
 	text-shadow: 1px 1px #000000;
+    display:block;
+    margin:auto;    
 }
 
 /*Elementos de esta linea para abajo NO se utilizaron-----------------------------------------------------------------------*/
