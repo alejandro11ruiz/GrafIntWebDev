@@ -128,19 +128,6 @@ h2 {
     word-wrap: break-word;
 }
 
-    .contenido2{
-    position: relative;
-	left: 10px;
-    width: 720px;
-    margin: auto;
-    margin-top: 60px;
-    background-color: palegoldenrod;
-    /*background-image: radial-gradient(lawngreen,greenyellow);*/
-    border-radius: 10px;
-    border-width: medium;
-    border-style: groove;
-    border-color:palevioletred}
-
 .Letras{  /*Formato de letras para párrafos, color azul y con fuente comun*/
     font-family: AncizarSans;
     font-size: 24px;
@@ -212,25 +199,7 @@ h2 {
 	margin-right: 20px;
 	margin-bottom: 10px;
 }
-th {    /* estilo para los encabezados de la tabla */ 
-	background-color: #663399;
-	color: #FFFF00;
-	font-weight: normal;
-	text-align: center;
-	padding: 10px 6px 4px 10px;  /* arriba, derecha, abajo, izquierda */
-	border-style:outset; /* borde bicelado */
-	border-size: 1px;
-	border-color: #663399;
-}
-td {       /* estilo para las celdas de la tabla */ 
-	background-color: #3333FF;
-	color: #DDDDFF;
-	padding: 10px 18px 10px 10px;  
-}
-td:hover {
-	color:#CC99CC;
-	text-shadow: 1px 1px #000000;	
-}  
+ 
 ul {        /* estilo para las listas */ 
 	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
 	margin: -2px 0px -60px -40px;  /* arriba, derecha, abajo, izquierda */
