@@ -37,7 +37,7 @@ a:hover {    /* Para los botones: se le aplica un tono blanco amarillento a la l
 .menunav {    /* se ajustan ancho y calibración de posición para el espacio de botones de navegación */ 
 	width: 860px;  /* estilo para el menu de navegación */ 
 	margin: auto;
-	align: center;
+	align-self: center;
 }
 .botonMenu {      /* Botones con tema GOT y varios ajustes de posición para la letra */ 
 	font-family: GOTfont;  
@@ -137,11 +137,11 @@ h2 {
     color: rgb(73, 73, 73);
 }
 .Letras2{ /*Formato de letras para titulos locales, tamaño de letra mayor y tema*/
-    font-family: GOTfont;
+    font-family: AncizarSans;
     font-size: 36px;
     font-style: normal;
     font-weight: normal;
-    text-align: center;
+    text-align: auto;
     color: rgb(73, 73, 73)}
 
 .Letras3{ /*Formato deletras para subtitulos locales, letra un poco mayor a la de parrafos y tema*/
@@ -150,37 +150,64 @@ h2 {
     font-style: normal;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 20px;
     color: rgb(73, 73, 73)}
 
-
-    .foto { /*caracteristicas para fotos externas a parrafos, proposito general*/
+/*Formatos de fotos para las imagenes en los distintos html, ajustan fotos según estan en párrafos, no o necesiten alguna caracteristica*/
+.foto { /*caracteristicas para fotos externas a parrafos, proposito general*/
 	position: relative;	
-    max-width: 800px;
+    max-width: 90%;
     margin: auto;
-    margin-bottom: 10px;
-    display:block;
-}
-
-.foto2 { /*caracteristicas para fotos externas a parrafos, al final no se uso*/
-	position: relative;	
-    max-width: 600px;
-    margin: auto;
+    align-self: center;
     margin-bottom: 30px;
 }
+.foto2 { /*caracteristicas para fotos externas a parrafos, al final no se uso*/
+	position: relative;	
+    /*max-width: 170px;*/
+    width: 240px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    top: 5px;
+    float: left;
+}
+.foto3 { /*caracteristicas para fotos externas a parrafos, proposito general*/
+	position: relative;	
+    width: 25%;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-right: 15%;
+}
+.foto4 { /*caracteristicas para fotos externas a parrafos, proposito general*/
+	position: relative;	
+    width: 55%;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.foto5 { /*caracteristicas para fotos externas a parrafos, proposito general*/
+	position: relative;	
+    width: 100%;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
 
+.div{
+    margin-top: 70px;
+}
 .uno {  /*Formato para imagenes dentro de parrafos, realiza ajustes para que el parrafo quede inmediato a la imagen*/
 	position: relative;
-	max-width:640px;
-	top: 20px;
+	width:80%;
+    height:40%;
+	top: auto;
+    align-self: center;
 	margin:auto;  /* margen igual a izquierda y derecha */
-	font-family: GOTfont;  /* solo si se suministra el archivo de la fuente */
-	font-size: 16px;
-	font-weight: normal;
-	text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;  /* solo si se suministra el archivo de la fuente */
 	color:#FFFFFF;
+    text-align: center;
 	text-shadow: 1px 1px #000000;
-    display:block;
-    margin:auto;    
 }
 
 /*Elementos de esta linea para abajo NO se utilizaron-----------------------------------------------------------------------*/
@@ -203,4 +230,290 @@ h2 {
 ul {        /* estilo para las listas */ 
 	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
 	margin: -2px 0px -60px -40px;  /* arriba, derecha, abajo, izquierda */
+}
+
+
+
+
+
+
+
+/**Propiedades para el menú deslizante, el boton de ocultar en caso de necesitarse y reacionado, personalizado y ajustado con valores provenientes de menuboton antiguo*/
+#btn-menu {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+} 
+header {
+    width: 100%;
+	z-index: 10;	/* coloca el checkbox por encima del contenido*/
+} 
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    background-color: rgba(91, 150, 150, 0);
+} 
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+    background-color: rgb(255, 238, 0);;
+}
+
+    .menu ul{ /*Este es el manejo del area donde va el menu de navegación*/
+    width: 900px;
+    margin:auto;
+    align-self: center;
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+    
+}
+    .menu li{/*modificación de apariencia y funcion de los botones*/
+    background-repeat: no-repeat; /* evita que se repita la imagen aunque cambie el tamaño*/
+    width: 160px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 14px;
+	text-align: center;
+    color: antiquewhite;
+    text-decoration: none; 
+    margin-bottom: 10px;
+    padding:5px 10x 6px 8px;
+	float: left;
+    text-shadow: none;
+    border-radius: 5px 5px 5px 5px;
+        
+} 
+    .menu li a {/*modificacion del interior de los botones*/
+    display: block;
+    font-family: GOTfont;
+    text-align: center;
+    color: antiquewhite;
+    text-decoration: none;    
+    padding-top: 6px;  
+    margin-bottom: 12px;
+}
+    .menu li a:hover {/*Apariencia cuando de coloca encima el cursor*/
+    color:aliceblue;
+	text-shadow: 1px 1px #000000;
+    background-repeat: no-repeat;
+    height: 30px;
+    text-shadow: none;
+    border-radius: 13px 13px 13px 13px;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes de parámetros en caso de que la ventana mida menos de 1200px */
+@media only screen and (max-width: 1200px) {
+    body {
+    background-color: #255025;
+}
+    .menunav {
+    max-width:500px;  /* esto es para que la primera fila tenga máximo tres botones*/
+        align-items: center;
+}
+    
+    /*e realizaron ajustes para acomodar imágenes, texto, elementos fuera de párrafos y titulos*/
+    h1{
+	font-size: 20px;
+	text-align: center;
+}
+    h2 {
+	font-family: GOTfont;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	color: #CCCC33;
+	text-align: left;
+    max-width: 250px;
+}
+    .fondo {  
+    background-color: #255025;
+    min-width: 500px;
+    max-width: 860px;
+    margin: auto;  /* márgenes izquierdo y derecho iguales para centrar*/
+}
+    .texto {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    max-width:600px;
+	margin:1px;
+    margin-right:10px;    
+}
+    .texto2 {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    min-width:550px;
+    max-width: 700px;
+	margin:1px;
+    margin-right:10px;    
+}
+    .texto3 {
+	font-size: 17px;
+	color:#FFFFFF;
+    text-align: left;
+    line-height: 1.4;
+    min-width:550px;
+    max-width: 700px;
+	margin:1px;
+    margin-right:10px;    
+}
+    .contenido{
+        width: 70%;
+        margin-top: 50px;
+    }
+    .menu ul{
+        width: 80%;
+    }
+    .menu li{
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .aelem1{
+        font-size: 38px;
+    }
+    .foto2{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+
+
+
+/* Ajuste de parámetros en caso que la ventana mida menos de 800px */
+/*Se colocó el valor mínimo de 480px por limite inferior y evitar resoluciones mas bajas*/
+@media only screen and (max-width: 800px) and (min-width:480px) {
+    body {
+    background-color: #255025;
+}
+    .texto {
+    font-family: AncizarSans;
+	font-size: 18px;
+    line-height: 1.7; /* se recomienda aumentar el interlineado y no usar serifas en pantallas pequeñas*/
+    width:90%;
+    min-width:250px;
+}
+    .texto2 {
+    font-family: AncizarSans;
+	font-size: 18px;
+    line-height: 1.7;
+    width:90%;
+    min-width:250px;
+}
+    .texto3 {
+    font-family: AncizarSans;
+	font-size: 18px;
+    line-height: 1.7;
+    width:90%;
+    min-width:250px;
+}
+    .menunav {
+    max-width:460px;  /* esto es para que la primera fila tenga máximo dos botones*/
+}
+     header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+    } 
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        background: rgba(0.5, 0.5, 0.5, 0.2); /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 40%; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+        transition: all 2s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+    .menu ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    .menu li {
+    font-family: AncizarSans;
+    }
+    #btn-menu:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+    h1 {
+	font-size: 26px;
+    }
+    h2 {
+    font-size: 10px;    
+    }
+    .foto {
+	width: 400px;
+    }
+    .contenido{
+        /*width: 400px;*/
+        font-size: 30px;
+    }
+    #map{
+        min-width: 480px;
+    }
+    .aelem1{
+       font-size: 32px;
+    }
+    .Letras{
+        font-size: 16px;
+    }
+    .foto2{
+        width: 50%;
+    }
+}
+
+
+.contenido3 { /*Segundo estructura personalizada para los párrafos, en caso de necesitar cambios en los párrafos*/
+	position: relative;
+	left: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(235,235,235);
+    padding-left: 20px;
+    padding-right: 20px;    /*Es en este espacio en donde se ajustan los colocres, formas y bordes que van a recubrir el párrafo*/
+    border-radius: 10px;
+    border-width: thick;
+    border-style: groove;   /*Decoración al estilo del fondo de donuts y permite una mejor visualización de las letras*/
+    border-color:rgb(35,35,35);
 }

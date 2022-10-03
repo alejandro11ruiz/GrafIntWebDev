@@ -1,35 +1,29 @@
 <!doctype html>
 <html>
-    <head>
-    <meta charset="UTF-8">
-        <!-- la codificación UTF-8 permite utilizar tildes y ñ en el contenido (nunca en los nombres o las etiquetas) -->
+<head>
+    <meta charset="UTF-8"> <!-- la codificación UTF-8 permite utilizar tildes y ñ en el contenido (nunca en los nombres o las etiquetas) -->
     <meta lang="es"><!-- la W3C recomienda definir un idioma al inicio además de la codificación UTF-8 -->
     <title>Espacio</title>
-
     <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
-
-
-    </head>
     <meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
-    </head>
+</head>
 
-    <body>
-    <div><h1><a class="aelem1" href="0_index.html" target="_self">Westeros</h1></div>
-
-    
-    
-    <!-- Menu de navegación, limites definidos por MENUNAV, estilo del boton por BOTONMENU y con redirección a las 5 paginas internas-->
-
-
-    <nav class="menunav"><!-- la etiqueta <nav> agrupa los elementos del menu de navegación -->
-
-        <a class="botonMenu" href="1_espacio.html" target="_self">Espacio</a>
-        <a class="botonMenu" href="2_habitantes.html" target="_self">Habitantes</a>
-        <a class="botonMenu" href="3_actividades.html" target="_self">Actividades</a>
-        <a class="botonMenu" href="4_historia.html" target="_self">Historia</a>
-        <a class="botonMenu" href="5_referencias.html" target="_self">Referencias</a>
-        <!-- cada botón tiene el mismo estilo botonMenu -->
-        </nav></br>
+<body>
+    <div><h1><a class="aelem1" href="0_index.html" target="_self">Westeros</a></h1></div>
+   
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+            <nav class="menu"><!-- la etiqueta <nav> agrupa los elementos del menu de navegación -->
+                <ul>   
+                    <li><a  href="1_espacio.html" target="_self">Espacio</a></li>
+                    <li><a  href="2_habitantes.html" target="_self">Habitantes</a></li>
+                    <li><a  href="3_actividades.html" target="_self">Actividades</a></li>
+                    <li><a  href="4_historia.html" target="_self">Historia</a></li>
+                    <li><a  href="5_referencias.html" target="_self">Referencias</a></li>
+                </ul>
+            </nav> 
+    </header> <br>
         
         <!--La estructura de los parrafos consta de titulos, subtitulos y parrafos, para ello se usan las clases correspondientes a cada uno, Letras,Letras3 y Letras2, -->
 
