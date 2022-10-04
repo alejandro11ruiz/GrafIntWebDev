@@ -341,7 +341,7 @@ header label:hover {
 
 
 /* Ajustes de parámetros en caso de que la ventana mida menos de 1200px */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) and (min-width:640px) {
     body {
     background-color: #255025;
 }
@@ -425,7 +425,7 @@ header label:hover {
 
 /* Ajuste de parámetros en caso que la ventana mida menos de 800px */
 /*Se colocó el valor mínimo de 480px por limite inferior y evitar resoluciones mas bajas*/
-@media only screen and (max-width: 800px) and (min-width:480px) {
+@media only screen and (max-width: 640px) {
     body {
     background-color: #255025;
 }
